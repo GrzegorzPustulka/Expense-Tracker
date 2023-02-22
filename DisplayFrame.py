@@ -1,5 +1,4 @@
 import customtkinter
-import tkinter
 import pandas as pd
 
 
@@ -8,10 +7,9 @@ class DisplayFrame(customtkinter.CTkScrollableFrame):
         super().__init__(master, **kwargs)
 
         df = pd.read_excel("data.xlsx")
-
         headers = df.columns
         for j, header in enumerate(headers):
-            label = customtkinter.CTkLabel(self, text=str(header))
+            label = customtkinter.CTkLabel(self, text=str(header), font=("Arial", 18), padx=5)
             label.grid(row=0, column=j)
 
         for i, row in enumerate(df.values):
