@@ -4,6 +4,7 @@ from InsertFrame import InsertFrame
 from DisplayFrame import DisplayFrame
 from GraphFrame import GraphFrame
 from IncomeFrame import IncomeFrame
+from ContactFrame import ContactFrame
 import sys
 
 
@@ -55,7 +56,10 @@ class MenuFrame(customtkinter.CTkFrame):
         self.graph_frame.grid(row=0, column=1, padx=20, pady=20, sticky="nsew")
 
     def contact_click(self):
-        print("button click")
+        self.clear_frame()
+        self.grid_rowconfigure(0, weight=1)
+        self.contact_frame = ContactFrame(self.master)
+        self.contact_frame.grid(row=0, column=1, padx=20, pady=20, sticky="new")
 
     def clear_frame(self):
         for widget in self.master.grid_slaves():

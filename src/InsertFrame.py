@@ -14,22 +14,25 @@ class InsertFrame(customtkinter.CTkFrame):
         self.kind_label.grid(row=1, column=0, padx=10, pady=10)
 
         self.radio_var = tkinter.StringVar()
-        self.radiobutton_1 = customtkinter.CTkRadioButton(self, text="FOOD",
+        self.radiobutton_1 = customtkinter.CTkRadioButton(self, text="Food",
                                                           variable=self.radio_var, value="FOOD")
-        self.radiobutton_2 = customtkinter.CTkRadioButton(self, text="DRINK",
+        self.radiobutton_2 = customtkinter.CTkRadioButton(self, text="Drink",
                                                           variable=self.radio_var, value="DRINK")
-        self.radiobutton_3 = customtkinter.CTkRadioButton(self, text="FAST FOOD",
-                                                          variable=self.radio_var, value="CITY")
-        self.radiobutton_4 = customtkinter.CTkRadioButton(self, text="Fixed",
-                                                          variable=self.radio_var, value="Fixed")
-        self.radiobutton_5 = customtkinter.CTkRadioButton(self, text="Additional",
-                                                          variable=self.radio_var, value="Additional")
+        self.radiobutton_3 = customtkinter.CTkRadioButton(self, text="Fast Food",
+                                                          variable=self.radio_var, value="FAST FOOD")
+        self.radiobutton_4 = customtkinter.CTkRadioButton(self, text="Energy drink",
+                                                          variable=self.radio_var, value="ENERGY DRINK")
+        self.radiobutton_5 = customtkinter.CTkRadioButton(self, text="Fixed",
+                                                          variable=self.radio_var, value="FIXED")
+        self.radiobutton_6 = customtkinter.CTkRadioButton(self, text="Additional",
+                                                          variable=self.radio_var, value="ADDITIONAL")
 
         self.radiobutton_1.grid(row=1, column=1, padx=10, pady=10)
         self.radiobutton_2.grid(row=1, column=2, padx=10, pady=10)
         self.radiobutton_3.grid(row=1, column=3, padx=10, pady=10)
         self.radiobutton_4.grid(row=1, column=4, padx=10, pady=10)
         self.radiobutton_5.grid(row=1, column=5, padx=10, pady=10)
+        self.radiobutton_6.grid(row=1, column=6, padx=10, pady=10)
 
         self.data_label = customtkinter.CTkLabel(self, text="Date")
         self.data_label.grid(row=2, column=0, padx=10, pady=10)
