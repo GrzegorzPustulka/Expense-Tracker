@@ -1,7 +1,7 @@
 # Expense TrackerCancel changes
 
 I wrote this program when I noticed it was spending too much money. And I don't 
-know what he spends the most on.
+know what he spends the most on. The project is constantly being developed. In the near future, instead of saving and reading data from excel, I will connect the applications to the database. Also planning to add more graphs and statistics
 
 ## Usage examples
 
